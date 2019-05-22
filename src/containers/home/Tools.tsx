@@ -58,7 +58,7 @@ export default () => {
     <Wrapper>
       {/* <FilterImg alt="logo-signature" src={Typescript} /> */}
       {tools.map(tool => (
-        <Icon>{tool}</Icon>
+        <Icon key={tool.key}>{tool}</Icon>
       ))}
     </Wrapper>
   )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 import WebGL from './home/WebGL'
@@ -83,9 +83,7 @@ const Tooltip = styled.span`
   `}
 `
 
-const Contact = styled.p`
-  margin: 10px;
-`
+const Contact = styled.span``
 
 const WebGLWrapper = styled.div`
   width: 40vw;
@@ -95,12 +93,18 @@ const WebGLWrapper = styled.div`
     width: 35vw;
     height: 35vw;
   `}
-  ${media.lg`
-    display: none;
-  `}
 `
 
 export default () => {
+  const [windowSize, setWindowSize] = useState(window.innerWidth)
+  useEffect(() => {
+    const handleResize = () => setWindowSize(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   return (
     <Wrapper>
       <Content>
@@ -132,6 +136,7 @@ export default () => {
             <Tooltip width={300}>
               I believe in human to human interaction. Don't be afraid to
               contact me, and we can get to know each other.
+              <br />
               <Contact>📨kasper@gnonce.com</Contact>
             </Tooltip>
             Get to know me better!
@@ -139,9 +144,11 @@ export default () => {
         </Description>
         <Tools />
       </Content>
-      <WebGLWrapper>
-        <WebGL />
-      </WebGLWrapper>
+      {windowSize > 1023 && (
+        <WebGLWrapper>
+          <WebGL windowSize={windowSize} />
+        </WebGLWrapper>
+      )}
     </Wrapper>
   )
 }

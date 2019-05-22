@@ -24,6 +24,14 @@ class WebGL extends React.Component<{}, {}, IWebGL> {
     this.resize()
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resizeListenerContext)
+  }
+
+  resizeListenerContext = () => {
+    this.resize()
+  }
+
   initWebGLView() {
     this.webglView = new View()
     this.threeRoot.appendChild(this.webglView.renderer.domElement)
@@ -31,9 +39,7 @@ class WebGL extends React.Component<{}, {}, IWebGL> {
 
   addListeners() {
     this.handleAnimate = this.animate.bind(this)
-    window.addEventListener('resize', () => {
-      this.resize()
-    })
+    window.addEventListener('resize', this.resizeListenerContext)
   }
 
   animate() {
