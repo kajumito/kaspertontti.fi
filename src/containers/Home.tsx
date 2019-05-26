@@ -96,14 +96,17 @@ const WebGLWrapper = styled.div`
 `
 
 export default () => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth)
-  useEffect(() => {
-    const handleResize = () => setWindowSize(window.innerWidth)
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+  const [windowSize, setWindowSize] = useState(0)
+  if (typeof window !== `undefined`) {
+    useEffect(() => {
+      const handleResize = () => setWindowSize(window.innerWidth)
+      handleResize()
+      window.addEventListener('resize', handleResize)
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
+    }, [])
+  }
 
   return (
     <Wrapper>
