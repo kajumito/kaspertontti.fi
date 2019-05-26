@@ -10,7 +10,7 @@ import Icon from './chat/speech-bubble.inline.svg'
 const Wrapper = styled.div``
 
 const ChatButton = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 50px;
   right: 100px;
   height: 64px;
@@ -31,6 +31,8 @@ const ChatButton = styled.div`
   }
   ${media.md`
     right: 50px;
+    height: 48px;
+    width: 48px;
   `}
   ${media.sm`
     right: 25px;
@@ -40,6 +42,10 @@ const ChatButton = styled.div`
 const ChatIcon = styled(Icon)`
   width: 36px;
   height: 36px;
+  ${media.md`
+    height: 24px;
+    width: 24px;
+  `}
 `
 
 export default (props: IChatProps) => {

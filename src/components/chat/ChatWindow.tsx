@@ -8,7 +8,7 @@ import Header from './chatWindow/Header'
 import { media } from '../../styles/styleUtils'
 
 const Wrapper = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 50px;
   right: ${(p: { isOpen: boolean }) => (p.isOpen ? '50px' : '-20px')};
   height: 80vh;
