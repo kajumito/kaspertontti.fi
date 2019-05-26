@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   bottom: 0;
   display: flex;
   padding: 100px 100px 50px 100px;
-  justify-content: flex-end;
   ${media.md`
     padding: 100px 50px 50px 50px;
   `}
@@ -19,7 +18,7 @@ const Wrapper = styled.div`
 `
 
 const LogoWrapper = styled.a`
-  margin-left: 20px;
+  margin-right: 20px;
   svg {
     fill: ${p => p.theme.palette.white};
     height: 36px;

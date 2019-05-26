@@ -5,6 +5,7 @@ import theme from '../styles/theme'
 import GlobalStyles from '../styles/globalStyles'
 
 import Head from '../components/Head'
+import Chat from '../components/Chat'
 
 interface ILayoutProps {
   children: any
@@ -23,6 +24,7 @@ export default ({ children, location }: ILayoutProps) => {
       <GlobalStyles />
       <Head pathname={location.pathname} />
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <Chat/>
     </Wrapper>
   )
 }

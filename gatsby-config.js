@@ -11,13 +11,19 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-glslify`,
-
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /\.inline\.svg$/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
