@@ -122,6 +122,7 @@ const Dot = styled.span`
 interface IChatProps {
   isOpen: boolean
   setChatHandler: any
+  customerId: number
 }
 
 const initialState = {
@@ -147,7 +148,7 @@ function reducer(state, action) {
   }
 }
 
-export default ({ isOpen, setChatHandler }: IChatProps) => {
+export default ({ isOpen, setChatHandler, customerId }: IChatProps) => {
   const [state, dispatch] = useReducer(reducer, initialState)
   const messageArea = useRef()
 
@@ -162,13 +163,15 @@ export default ({ isOpen, setChatHandler }: IChatProps) => {
       isLoading: true,
       message,
     })
-    post('https://servant-f6apqsariq-uc.a.run.app/chat', message).then(res => {
-      dispatch({
-        type: 'ADD_MESSAGE',
-        isLoading: false,
-        message: res.data,
-      })
-    })
+    post('https://api.kaspertontti.fi/chat', { ...message, customerId }).then(
+      res => {
+        dispatch({
+          type: 'ADD_MESSAGE',
+          isLoading: false,
+          message: res.data,
+        })
+      }
+    )
   }
 
   return (

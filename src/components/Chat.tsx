@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { v4 as uuid } from 'uuid'
 
 import ChatWindow from './chat/ChatWindow'
 
@@ -50,12 +51,17 @@ const ChatIcon = styled(Icon)`
 
 export default (props: IChatProps) => {
   const [isChatOpen, setChatOpen] = useState(false)
+  const customerId = uuid()
   return (
     <Wrapper>
       <ChatButton isOpen={isChatOpen} onClick={() => setChatOpen(!isChatOpen)}>
         <ChatIcon />
       </ChatButton>
-      <ChatWindow isOpen={isChatOpen} setChatHandler={setChatOpen} />
+      <ChatWindow
+        customerId={customerId}
+        isOpen={isChatOpen}
+        setChatHandler={setChatOpen}
+      />
     </Wrapper>
   )
 }

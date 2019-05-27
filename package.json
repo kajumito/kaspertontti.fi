@@ -45,7 +45,8 @@
     "styled-components": "^4.1.3",
     "three": "^0.103.0",
     "typescript": "^3.3.3333",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "prettier": "^1.16.4",
