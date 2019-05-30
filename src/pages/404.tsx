@@ -3,30 +3,8 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 // Layout
+import { Link } from 'gatsby'
 import Layout from '../layout/index'
-
-// Components
-import Image from '../components/Image'
-import Heading from '../components/Heading'
-
-interface IndexPageProps {
-  location: {
-    pathname: string
-  }
-  data: {
-    image: {
-      childImageSharp: {
-        fluid: any
-      }
-    }
-    site: {
-      siteMetadata: {
-        title: string
-        description: string
-      }
-    }
-  }
-}
 
 const Wrapper = styled.div`
   width: 100%;
@@ -39,22 +17,40 @@ const Wrapper = styled.div`
   background: #222;
 `
 
-export default ({ data, location }: IndexPageProps) => {
-  const { image, site } = data
+const ErrorInformation = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+const Text = styled.h1`
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 10px;
+`
+
+const Number = styled.h2`
+  color: white;
+  padding-right: 10px;
+  border-right: 1px solid white;
+`
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+`
+
+export default ({ location }: IndexPageProps) => {
   return (
     <Layout location={location}>
-      <Wrapper />
+      <Wrapper>
+        <ErrorInformation>
+          <Number>404</Number>
+          <Text>Sivua ei löytynyt!</Text>
+        </ErrorInformation>
+        <StyledLink to="/">👈 Palaa etusivulle </StyledLink>
+      </Wrapper>
     </Layout>
   )
 }
-
-export const NotFoundQuery = graphql`
-  query NotFoundPageQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`
