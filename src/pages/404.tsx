@@ -47,9 +47,9 @@ export default ({ location }: IndexPageProps) => {
       <Wrapper>
         <ErrorInformation>
           <Number>404</Number>
-          <Text>Sivua ei löytynyt!</Text>
+          <Text>Page not found!</Text>
         </ErrorInformation>
-        <StyledLink to="/">👈 Palaa etusivulle </StyledLink>
+        <StyledLink to="/">👈 Back to homepage </StyledLink>
       </Wrapper>
     </Layout>
   )

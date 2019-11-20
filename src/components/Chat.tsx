@@ -49,7 +49,7 @@ const ChatIcon = styled(Icon)`
   `}
 `
 
-export default (props: IChatProps) => {
+export default () => {
   const [isChatOpen, setChatOpen] = useState(false)
   const customerId = uuid()
   return (

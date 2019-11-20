@@ -10,7 +10,7 @@ import { media } from '../../styles/styleUtils'
 const Wrapper = styled.div`
   position: absolute;
   bottom: 50px;
-  right: ${(p: { isOpen: boolean }) => (p.isOpen ? '50px' : '-20px')};
+  right: ${(p: { isOpen: boolean }) => (p.isOpen ? '50px' : '0px')};
   height: 80vh;
   width: 400px;
   visibility: ${(p: { isOpen: boolean }) => (p.isOpen ? 'visible' : 'hidden')};
@@ -122,10 +122,26 @@ const Dot = styled.span`
 interface IChatProps {
   isOpen: boolean
   setChatHandler: any
-  customerId: number
+  customerId: string
 }
 
-const initialState = {
+interface IMessage {
+  user: boolean
+  content: string
+}
+
+interface IState {
+  isLoading: boolean
+  messages: IMessage[]
+}
+
+interface IAction {
+  type: string
+  isLoading: boolean
+  message: string
+}
+
+const initialState: IState = {
   isLoading: false,
   messages: [
     {
@@ -136,7 +152,7 @@ const initialState = {
   ],
 }
 
-function reducer(state, action) {
+const reducer = (state: IState, action: IAction) => {
   switch (action.type) {
     case 'ADD_MESSAGE':
       return {
@@ -150,7 +166,7 @@ function reducer(state, action) {
 
 export default ({ isOpen, setChatHandler, customerId }: IChatProps) => {
   const [state, dispatch] = useReducer(reducer, initialState)
-  const messageArea = useRef()
+  const messageArea = useRef(null)
 
   // Scroll down when new messages
   useEffect(() => {

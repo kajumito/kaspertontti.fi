@@ -16,6 +16,7 @@ interface ILayoutProps {
 
 const Wrapper = styled.div`
   display: flex;
+  overflow: hidden;
 `
 
 export default ({ children, location }: ILayoutProps) => {
@@ -24,7 +25,7 @@ export default ({ children, location }: ILayoutProps) => {
       <GlobalStyles />
       <Head pathname={location.pathname} />
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
-      <Chat/>
+      <Chat />
     </Wrapper>
   )
 }
