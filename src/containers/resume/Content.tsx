@@ -103,12 +103,12 @@ export default () => (
       <Content>
         <Item>
           <ItemText>
-            I have been working with web technologies for over 5 years. During
-            this time I've been taken part in various different projects from
+            I have been working with web technologies for over 5 years now.
+            During this time I've taken part in various different projects from
             real-time web applications to WebGL and data visualization. I have a
             deep understanding of current web technology ecosystem and modern
             web development stacks, especially with MERN (MongoDB, Express,
-            React/Redux, Node)
+            React/Redux, Node).
           </ItemText>
         </Item>
       </Content>
@@ -118,14 +118,20 @@ export default () => (
       <Content>
         <Item>
           <ItemTitle>Kauppa Käy LKV - Lead Developer</ItemTitle>
-          <ItemDescription>Jun 2019 - Present</ItemDescription>
+          <ItemDescription>
+            Jun 2019 - Present | Gnonce's joint venture
+          </ItemDescription>
           <ItemText>
             Worked as a lead frontend developer for a web application made to
-            revolutionize the real estate investing. In just couple of months we
-            managed to get over 30k unique users to our platform from scratch,
-            and we're now employing 10 people. We published the first version of
-            this application in under five months after the first from can be
-            found from here{' '}
+            revolutionize the real estate investing. My responsibility was to
+            build the SSR (server-side rendered) web application with fully
+            fetched CI/CD pipeline while helping other team members to grasp the
+            SSR paradigm. In just under five months after the start of the
+            project our team was able to deliver a fully working real-time
+            webapp to be used by thousands of users on a daily basis. The
+            application is using a publish-subscribe paradigm which allows our
+            users to do real-time bidding on auctions reliably. The web
+            application can be found from here{' '}
             <StyledAnchor
               href="https://kauppa.sijoitusasunnot.com"
               target="_blank"
@@ -147,7 +153,7 @@ export default () => (
         </Item>
         <Item>
           <ItemTitle>
-            University of Jyväskylä - Researcher and Teacher
+            University of Jyväskylä - Research assistant and Teacher
           </ItemTitle>
           <ItemDescription>Jun 2018 - Jun 2019</ItemDescription>
           <ItemText>
@@ -156,8 +162,8 @@ export default () => (
             multiple different projects with decentralized app development, and
             also created and maintained a private Ethereum network which was
             used in development purposes by our research group. I also managed
-            to get a funding worth of 100 000€ for our research group. One of my
-            responsibilities was also to teach smart contract development for
+            to get a funding worth of 100 000€ for our research group. Also one
+            of my responsibilities was to teach smart contract development for
             over 60 students on a blockchain course.
           </ItemText>
         </Item>
@@ -177,7 +183,7 @@ export default () => (
           <ItemDescription>2012- 2015</ItemDescription>
           <ItemText>
             In addition to my high school studies I have completed over ten
-            courses on programming with excellent success and diplomas.
+            programming courses with excellent success and diplomas.
           </ItemText>
         </Item>
       </Content>
