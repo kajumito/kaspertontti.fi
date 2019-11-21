@@ -133,7 +133,7 @@ export default () => (
             also helped team members to grasp the SSR paradigm.
           </ItemText>
           <ItemText>
-            In just under five months our team of four developers were able to
+            In just under five months our team of four developers was able to
             design and deliver a fully working real-time progressive web
             application that is used by thousands of users on a daily basis. The
             application is using a publish-subscribe paradigm which allows our
