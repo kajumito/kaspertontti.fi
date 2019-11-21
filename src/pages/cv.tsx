@@ -1,11 +1,10 @@
 import React, { Fragment } from 'react'
-import { graphql } from 'gatsby'
 
 // Layout
 import Layout from '../layout/index'
 
 // View Containers
-import Home from '../containers/Home'
+import Resume from '../containers/Resume'
 
 // Components
 import Loading from '../components/Loading'
@@ -20,13 +19,10 @@ interface IndexPageProps {
 
 export default ({ location }: IndexPageProps) => {
   return (
-    <Layout noChat={false} location={location}>
+    <Layout noChat={true} location={location}>
       <Fragment>
-        <Loading />
-
         <Header />
-        <Home />
-        <Footer />
+        <Resume />
       </Fragment>
     </Layout>
   )

@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import Signature from './header/signature.svg'
 
 import { media } from '../styles/styleUtils'
 
-const Wrapper = styled.div`
+const Wrapper = styled(Link)`
   width: 100%;
   z-index: 1;
   position: absolute;
@@ -23,7 +24,7 @@ const Wrapper = styled.div`
 `
 
 export default () => (
-  <Wrapper>
+  <Wrapper to="/">
     <img alt="logo-signature" src={Signature} />
   </Wrapper>
 )

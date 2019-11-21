@@ -9,6 +9,7 @@ import Chat from '../components/Chat'
 
 interface ILayoutProps {
   children: any
+  noChat: boolean
   location: {
     pathname: string
   }
@@ -19,13 +20,13 @@ const Wrapper = styled.div`
   overflow: hidden;
 `
 
-export default ({ children, location }: ILayoutProps) => {
+export default ({ children, location, noChat }: ILayoutProps) => {
   return (
     <Wrapper>
       <GlobalStyles />
       <Head pathname={location.pathname} />
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
-      <Chat />
+      {!noChat && <Chat />}
     </Wrapper>
   )
 }

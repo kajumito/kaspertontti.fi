@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import WebGL from './home/WebGL'
 
@@ -95,6 +96,12 @@ const WebGLWrapper = styled.div`
   `}
 `
 
+const StyledLink = styled(Link)`
+  color: white;
+  font-size: 21px;
+  margin-top: 16px;
+`
+
 export default () => {
   const [windowSize, setWindowSize] = useState(0)
   if (typeof window !== `undefined`) {
@@ -146,6 +153,7 @@ export default () => {
           </Underline>
         </Description>
         <Tools />
+        <StyledLink to="/cv">See my resume &rarr;</StyledLink>
       </Content>
       {windowSize > 1023 && (
         <WebGLWrapper>
