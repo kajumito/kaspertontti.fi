@@ -96,6 +96,10 @@ const StyledAnchor = styled.a`
   color: white;
 `
 
+const Bold = styled.span`
+  font-weight: 700;
+`
+
 export default () => (
   <Wrapper>
     <Section>
@@ -124,14 +128,17 @@ export default () => (
           <ItemText>
             Worked as a lead frontend developer for a web application made to
             revolutionize the real estate investing. My responsibility was to
-            build the SSR (server-side rendered) web application with fully
-            fetched CI/CD pipeline while helping other team members to grasp the
-            SSR paradigm. In just under five months after the start of the
-            project our team was able to deliver a fully working real-time
-            webapp to be used by thousands of users on a daily basis. The
+            build the SSR (server-side rendered) web application and configure
+            CI/CD pipelines to support continuous and agile software releases. I
+            also helped team members to grasp the SSR paradigm.
+          </ItemText>
+          <ItemText>
+            In just under five months our team of four developers were able to
+            design and deliver a fully working real-time progressive web
+            application that is used by thousands of users on a daily basis. The
             application is using a publish-subscribe paradigm which allows our
-            users to do real-time bidding on auctions reliably. The web
-            application can be found from here{' '}
+            users to do real-time bidding on auctions reliably. The live web
+            application can be found from:{' '}
             <StyledAnchor
               href="https://kauppa.sijoitusasunnot.com"
               target="_blank"
@@ -139,16 +146,29 @@ export default () => (
               https://kauppa.sijoitusasunnot.com
             </StyledAnchor>
           </ItemText>
+          <ItemText>
+            Some relevant tech:{' '}
+            <Bold>
+              Next.js, React, Pusher, Typescript, Express, Cypress, Jest,
+              Docker, CircleCi, Heroku
+            </Bold>
+          </ItemText>
         </Item>
         <Item>
           <ItemTitle>Gnonce - Co-Founder</ItemTitle>
           <ItemDescription>Aug 2018 - Present</ItemDescription>
           <ItemText>
-            I started my official private career at Gnonce while I was still
-            finishing up my studies in University of Jyväskylä. In addition to
-            creating our own software and working with multiple customers from
-            different fields, at Gnonce I've also done subcontracting for bigger
-            companies on the stock market.
+            I started my entrepreneurial career at Gnonce while I was still
+            finishing up my studies in the University of Jyväskylä. Gnonce is a
+            software consulting company and startup incubator founded by three
+            IT students working on the same academic research group. After my
+            BSc I started to work at Gnonce full time, providing my technical
+            skills for startup joint ventures and subcontracting clients
+            cross-industry.
+          </ItemText>
+          <ItemText>
+            Some of my most important clients include well known publicly listed
+            companies in the banking and the construction industry.
           </ItemText>
         </Item>
         <Item>
@@ -157,14 +177,19 @@ export default () => (
           </ItemTitle>
           <ItemDescription>Jun 2018 - Jun 2019</ItemDescription>
           <ItemText>
-            After two years of my studies I started working in a blockchain
-            specialized research group. I worked as a lead developer for
-            multiple different projects with decentralized app development, and
-            also created and maintained a private Ethereum network which was
-            used in development purposes by our research group. I also managed
-            to get a funding worth of 100 000€ for our research group. Also one
-            of my responsibilities was to teach smart contract development for
-            over 60 students on a blockchain course.
+            After two years of my studies I started working in academic research
+            group. I worked as a lead developer for multiple projects related to
+            decentralized app development, and also created and maintained a
+            private Ethereum network which was used for development purposes by
+            our research group. One of my major responsibilities was to teach
+            smart contract development for over 60 BSc & MSc students on a
+            decentralized application development course.
+          </ItemText>
+          <ItemText>
+            <Bold>
+              My biggest non-technical accomplishment in this job was to get a
+              funding worth of 100 000€ for our research project.
+            </Bold>
           </ItemText>
         </Item>
       </Content>
