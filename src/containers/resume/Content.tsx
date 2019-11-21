@@ -121,7 +121,7 @@ export default () => (
       <Subtitle>Experience</Subtitle>
       <Content>
         <Item>
-          <ItemTitle>Kauppa Käy LKV - Lead Developer</ItemTitle>
+          <ItemTitle>Kauppa Käy LKV - Lead Frontend Developer</ItemTitle>
           <ItemDescription>
             Jun 2019 - Present | Gnonce's joint venture
           </ItemDescription>
@@ -136,9 +136,7 @@ export default () => (
             In just under five months our team of four developers was able to
             design and deliver a fully working real-time progressive web
             application that is used by thousands of users on a daily basis. The
-            application is using a publish-subscribe paradigm which allows our
-            users to do real-time bidding on auctions reliably. The live web
-            application can be found from:{' '}
+            live web application can be found from:{' '}
             <StyledAnchor
               href="https://kauppa.sijoitusasunnot.com"
               target="_blank"
@@ -172,9 +170,7 @@ export default () => (
           </ItemText>
         </Item>
         <Item>
-          <ItemTitle>
-            University of Jyväskylä - Research assistant and Teacher
-          </ItemTitle>
+          <ItemTitle>University of Jyväskylä - Research assistant</ItemTitle>
           <ItemDescription>Jun 2018 - Jun 2019</ItemDescription>
           <ItemText>
             After two years of my studies I started working in academic research
