@@ -145,7 +145,7 @@ export default () => (
             </StyledAnchor>
           </ItemText>
           <ItemText>
-            Some relevant tech:{' '}
+            Relevant tech:{' '}
             <Bold>
               Next.js, React, Pusher, Typescript, Express, Cypress, Jest,
               Docker, CircleCi, Heroku
@@ -168,6 +168,13 @@ export default () => (
             Some of my most important clients include well known publicly listed
             companies in the banking and the construction industry.
           </ItemText>
+          <ItemText>
+            Things we are very passionate about:{' '}
+            <Bold>
+              modern web applications, software architecture, rapid prototyping,
+              agile methods, software startups
+            </Bold>
+          </ItemText>
         </Item>
         <Item>
           <ItemTitle>University of Jyväskylä - Research assistant</ItemTitle>
@@ -187,6 +194,31 @@ export default () => (
               funding worth of 100 000€ for our research project.
             </Bold>
           </ItemText>
+          <ItemText>
+            Relevant tech:{' '}
+            <Bold>
+              React.js, Express.js, Node.js, MongoDB, Ethereum, IPFS, AWS
+            </Bold>
+          </ItemText>
+        </Item>
+        <Item>
+          <ItemTitle>Web developer - Freelancer</ItemTitle>
+          <ItemDescription>Oct 2014 - Aug 2018</ItemDescription>
+          <ItemText>
+            Worked as a freelance web developer creating websites for my
+            customers. During this time I designed, developed and deployed
+            various different websites mostly using HTML, CSS and Javascript.
+            Starting this as a high school graduate, I gained a lot of early
+            career experience working with clients while improving my web
+            development skills.
+          </ItemText>
+          <ItemText>
+            Relevant tech:{' '}
+            <Bold>
+              HTML5, CSS, SASS, Javascript, jQuery, Gulp.js, Bootstrap,
+              Wordpress
+            </Bold>
+          </ItemText>
         </Item>
       </Content>
     </Section>
@@ -197,7 +229,7 @@ export default () => (
           <ItemTitle>
             University of Jyväskylä - BSc, Information Technology
           </ItemTitle>
-          <ItemDescription>Jun 2015 - Dec 2018</ItemDescription>
+          <ItemDescription>Sep 2015 - Dec 2018</ItemDescription>
         </Item>
         <Item>
           <ItemTitle>High School - Technology line</ItemTitle>
