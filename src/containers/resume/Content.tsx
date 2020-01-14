@@ -147,7 +147,7 @@ export default () => (
           <ItemText>
             Relevant tech:{' '}
             <Bold>
-              Next.js, React, Redux, Pusher, Typescript, Node.js, Express, Cypress, Jest,
+              Next.js, React, Redux, GraphQL, Pusher, Typescript, Node.js, Express, Cypress, Jest,
               Docker, CircleCi, Heroku
             </Bold>
           </ItemText>
