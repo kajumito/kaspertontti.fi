@@ -147,7 +147,7 @@ export default () => (
           <ItemText>
             Relevant tech:{' '}
             <Bold>
-              Next.js, React, Pusher, Typescript, Express, Cypress, Jest,
+              Next.js, React, Redux, Pusher, Typescript, Node.js, Express, Cypress, Jest,
               Docker, CircleCi, Heroku
             </Bold>
           </ItemText>
@@ -197,7 +197,7 @@ export default () => (
           <ItemText>
             Relevant tech:{' '}
             <Bold>
-              React.js, Express.js, Node.js, MongoDB, Ethereum, IPFS, AWS
+              React, Redux, Node.js, Express, MongoDB, Ethereum, IPFS
             </Bold>
           </ItemText>
         </Item>
