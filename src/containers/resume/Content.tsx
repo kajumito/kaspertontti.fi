@@ -121,9 +121,33 @@ export default () => (
       <Subtitle>Experience</Subtitle>
       <Content>
         <Item>
+          <ItemTitle>Gnonce - Co-Founder</ItemTitle>
+          <ItemDescription>Aug 2018 - Present</ItemDescription>
+          <ItemText>
+            I started my entrepreneurial career at Gnonce while I was still
+            finishing up my studies in the University of Jyväskylä. Gnonce is a
+            software consulting company and startup incubator founded by three
+            IT students working on the same academic research group. After my
+            BSc I started to work at Gnonce full time, providing my technical
+            skills for startup joint ventures and subcontracting clients
+            cross-industry.
+          </ItemText>
+          <ItemText>
+            Some of my most important clients include well known publicly listed
+            companies in the banking and the construction industry.
+          </ItemText>
+          <ItemText>
+            Things we are very passionate about:{' '}
+            <Bold>
+              modern web applications, software architecture, rapid prototyping,
+              agile methods, software startups
+            </Bold>
+          </ItemText>
+        </Item>
+        <Item>
           <ItemTitle>Kauppa Käy LKV - Lead Frontend Developer</ItemTitle>
           <ItemDescription>
-            Jun 2019 - Present | Gnonce's joint venture
+            May 2019 - Jan 2020 | Gnonce's joint venture
           </ItemDescription>
           <ItemText>
             Worked as a lead frontend developer for a web application made to
@@ -149,30 +173,6 @@ export default () => (
             <Bold>
               Next.js, React, Redux, GraphQL, Pusher, Typescript, Node.js, Express, Cypress, Jest,
               Docker, CircleCi, Heroku
-            </Bold>
-          </ItemText>
-        </Item>
-        <Item>
-          <ItemTitle>Gnonce - Co-Founder</ItemTitle>
-          <ItemDescription>Aug 2018 - Present</ItemDescription>
-          <ItemText>
-            I started my entrepreneurial career at Gnonce while I was still
-            finishing up my studies in the University of Jyväskylä. Gnonce is a
-            software consulting company and startup incubator founded by three
-            IT students working on the same academic research group. After my
-            BSc I started to work at Gnonce full time, providing my technical
-            skills for startup joint ventures and subcontracting clients
-            cross-industry.
-          </ItemText>
-          <ItemText>
-            Some of my most important clients include well known publicly listed
-            companies in the banking and the construction industry.
-          </ItemText>
-          <ItemText>
-            Things we are very passionate about:{' '}
-            <Bold>
-              modern web applications, software architecture, rapid prototyping,
-              agile methods, software startups
             </Bold>
           </ItemText>
         </Item>
