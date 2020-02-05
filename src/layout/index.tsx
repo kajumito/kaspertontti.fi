@@ -5,11 +5,9 @@ import theme from '../styles/theme'
 import GlobalStyles from '../styles/globalStyles'
 
 import Head from '../components/Head'
-import Chat from '../components/Chat'
 
 interface ILayoutProps {
   children: any
-  noChat: boolean
   location: {
     pathname: string
   }
@@ -20,13 +18,12 @@ const Wrapper = styled.div`
   overflow: hidden;
 `
 
-export default ({ children, location, noChat }: ILayoutProps) => {
+export default ({ children, location }: ILayoutProps) => {
   return (
     <Wrapper>
       <GlobalStyles />
       <Head pathname={location.pathname} />
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
-      {!noChat && <Chat />}
     </Wrapper>
   )
 }
