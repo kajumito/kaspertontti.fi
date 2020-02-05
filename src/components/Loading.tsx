@@ -18,12 +18,13 @@ const Wrapper = styled.div`
 
 const Loading = () => {
   // This is temporary because ReactDOMServer doesn't yet support Suspense
-  const [isLoading, setIsLoading] = useState(sessionStorage.getItem('signature-load') !== 'loaded')
+  const alreadyLoaded = typeof window !== 'undefined' && window.sessionStorage.getItem('signature-load')
+  const [isLoading, setIsLoading] = useState(alreadyLoaded !== 'loaded')
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false) 
-      sessionStorage.setItem('signature-load', 'loaded');
+      typeof window !== 'undefined' && window.sessionStorage.setItem('signature-load', 'loaded');
     }, 3500)
   })
 
