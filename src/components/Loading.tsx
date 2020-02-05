@@ -21,7 +21,6 @@ const Loading = () => {
   const [isLoading, setIsLoading] = useState(sessionStorage.getItem('signature-load') !== 'loaded')
 
   useEffect(() => {
-    console.log(sessionStorage.getItem('signature-load'))
     setTimeout(() => {
       setIsLoading(false) 
       sessionStorage.setItem('signature-load', 'loaded');
