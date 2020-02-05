@@ -11,17 +11,21 @@ const Wrapper = styled.div`
   height: 100vh;
   background: ${p => p.theme.palette.black};
   z-index: 2;
-  opacity: ${p => (p.loading ? 1 : 0)};
-  visibility: ${p => !p.loading && 'hidden'};
+  opacity: ${(p: {loading:boolean}) => (p.loading ? 1 : 0)};
+  visibility: ${(p: {loading:boolean}) => !p.loading && 'hidden'};
   transition: all 0.25s ease-out;
 `
 
 const Loading = () => {
   // This is temporary because ReactDOMServer doesn't yet support Suspense
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(sessionStorage.getItem('signature-load') !== 'loaded')
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 3500)
+    console.log(sessionStorage.getItem('signature-load'))
+    setTimeout(() => {
+      setIsLoading(false) 
+      sessionStorage.setItem('signature-load', 'loaded');
+    }, 3500)
   })
 
   return (

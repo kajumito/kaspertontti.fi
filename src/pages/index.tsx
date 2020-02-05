@@ -1,29 +1,24 @@
 import React, { Fragment } from 'react'
-import { graphql } from 'gatsby'
 
-// Layout
 import Layout from '../layout/index'
 
-// View Containers
 import Home from '../containers/Home'
 
-// Components
 import Loading from '../components/Loading'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-interface IndexPageProps {
+interface IIndexPageProps {
   location: {
     pathname: string
   }
 }
 
-export default ({ location }: IndexPageProps) => {
+export default ({ location }: IIndexPageProps) => {
   return (
-    <Layout noChat={false} location={location}>
+    <Layout location={location}>
       <Fragment>
         <Loading />
-
         <Header />
         <Home />
         <Footer />
