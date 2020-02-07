@@ -4,20 +4,19 @@ import styled from 'styled-components'
 import LogoAnimation from './loading/LogoAnimation'
 
 const Wrapper = styled.div`
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background: ${p => p.theme.palette.black};
   z-index: 2;
+  pointer-events: none;
+  background: ${p => p.theme.palette.black};
   opacity: ${(p: {loading:boolean}) => (p.loading ? 1 : 0)};
-  visibility: ${(p: {loading:boolean}) => !p.loading && 'hidden'};
-  transition: all 0.25s ease-out;
+  transition: all 0.5s ease-out;
 `
 
 const Loading = () => {
-  // This is temporary because ReactDOMServer doesn't yet support Suspense
   const alreadyLoaded = typeof window !== 'undefined' && window.sessionStorage.getItem('signature-load')
   const [isLoading, setIsLoading] = useState(alreadyLoaded !== 'loaded')
 
