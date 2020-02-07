@@ -11,15 +11,13 @@ const Wrapper = styled(Link)`
   z-index: 1;
   position: absolute;
   display: flex;
-  padding: 50px 100px 100px 100px;
+  padding-top: 50px;
+  padding-left: 100px;
   img {
     height: 48px;
   }
   ${media.md`
-    padding: 50px 50px 100px 50px;
-  `}
-  ${media.sm`
-    padding: 50px 25px 100px 25px;
+    padding-left: 25px;
   `}
 `
 

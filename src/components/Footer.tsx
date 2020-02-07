@@ -8,12 +8,10 @@ const Wrapper = styled.div`
   position: absolute;
   bottom: 0;
   display: flex;
-  padding: 100px 100px 50px 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
   ${media.md`
-    padding: 100px 50px 50px 50px;
-  `}
-  ${media.sm`
-    padding: 100px 25px 50px 25px;
+    padding-left: 25px;
   `}
 `
 
