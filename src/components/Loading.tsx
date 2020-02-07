@@ -17,9 +17,7 @@ const Wrapper = styled.div`
 `
 
 const Loading = () => {
-  const alreadyLoaded = typeof window !== 'undefined' && window.sessionStorage.getItem('signature-load')
-  const [isLoading, setIsLoading] = useState(alreadyLoaded !== 'loaded')
-
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false) 

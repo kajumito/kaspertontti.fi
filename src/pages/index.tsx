@@ -15,10 +15,11 @@ interface IIndexPageProps {
 }
 
 export default ({ location }: IIndexPageProps) => {
+  const alreadyLoaded = typeof window !== 'undefined' && window.sessionStorage.getItem('signature-load')
   return (
     <Layout location={location}>
       <Fragment>
-        <Loading />
+        {!alreadyLoaded && <Loading/>}
         <Header />
         <Home />
         <Footer />

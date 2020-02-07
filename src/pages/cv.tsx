@@ -17,10 +17,11 @@ interface IndexPageProps {
 }
 
 export default ({ location }: IndexPageProps) => {
+  const alreadyLoaded = typeof window !== 'undefined' && window.sessionStorage.getItem('signature-load')
   return (
     <Layout location={location}>
       <Fragment>
-        <Loading/>
+        {!alreadyLoaded && <Loading/>}
         <Header />
         <Resume />
       </Fragment>
