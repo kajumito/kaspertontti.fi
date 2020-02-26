@@ -178,7 +178,7 @@ export default () => (
         </Item>
         <Item>
           <ItemTitle>University of Jyväskylä - Research assistant</ItemTitle>
-          <ItemDescription>Jun 2018 - Jun 2019</ItemDescription>
+          <ItemDescription>Jan 2018 - Jan 2019</ItemDescription>
           <ItemText>
             After two years of my studies I started working in academic research
             group. I worked as a lead developer for multiple projects related to
