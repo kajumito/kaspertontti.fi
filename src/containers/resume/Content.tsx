@@ -107,12 +107,14 @@ export default () => (
       <Content>
         <Item>
           <ItemText>
-            I have been working with web technologies for over 5 years now.
-            During this time I've taken part in various different projects from
-            real-time web applications to WebGL and data visualization. I have a
-            deep understanding of current web technology ecosystem and modern
-            web development stacks, especially with MERN (MongoDB, Express,
-            React/Redux, Node).
+            Experienced software engineer and consultant with a deep understanding in modern web technologies and user centric software design.
+          </ItemText>
+          <ItemText>
+            Creating digital solutions has been my passion since I wrote my first lines
+            of code in elementary school. Now, after a decade and numerous projects
+            later I’ve had the honor to work with a wide range of clients and partners
+            ranging from large multinational corporations to small companies,
+            innovative start-ups and academic institutions.
           </ItemText>
         </Item>
       </Content>
@@ -121,64 +123,45 @@ export default () => (
       <Subtitle>Experience</Subtitle>
       <Content>
         <Item>
-          <ItemTitle>Gnonce - Co-Founder</ItemTitle>
-          <ItemDescription>Aug 2018 - Present</ItemDescription>
+          <ItemTitle>Gnonce - Software Craftsman & Co-Founder</ItemTitle>
+          <ItemDescription>2018 - Present</ItemDescription>
           <ItemText>
-            I started my entrepreneurial career at Gnonce while I was still
-            finishing up my studies in the University of Jyväskylä. Gnonce is a
-            software consulting company and startup incubator founded by three
-            IT students working on the same academic research group. After my
-            BSc I started to work at Gnonce full time, providing my technical
-            skills for startup joint ventures and subcontracting clients
-            cross-industry.
-          </ItemText>
-          <ItemText>
-            Some of my most important clients include well known publicly listed
+            Gnonce is a career accelerator for skilled software craftsmen. Our mission
+            is to convert ambitious software developers from employment to independent
+            software freelancing. Some of my most important clients include well known publicly listed
             companies in the banking and the construction industry.
           </ItemText>
           <ItemText>
-            Things we are very passionate about:{' '}
-            <Bold>
-              modern web applications, software architecture, rapid prototyping,
-              agile methods, software startups
-            </Bold>
+            Let me know if you want to know more about the projects I've been involved with. 💎 
           </ItemText>
         </Item>
         <Item>
           <ItemTitle>Kauppa Käy LKV - Lead Frontend Developer</ItemTitle>
           <ItemDescription>
-            May 2019 - Jan 2020 | Gnonce's joint venture
+            2019 - 2020 | Gnonce's joint venture
           </ItemDescription>
           <ItemText>
-            Worked as a lead frontend developer for a web application made to
-            revolutionize the real estate investing. My responsibility was to
-            build the SSR (server-side rendered) web application and configure
-            CI/CD pipelines to support continuous and agile software releases. I
-            also helped team members to grasp the SSR paradigm.
+            Kauppa Käy LKV is a joint venture company running a digital platform
+            which facilitates trading of real estate assets for retail investors. My
+            main responsibility in this project was to lead design and development of
+            the client facing SSR (server-side rendered) web application and configure
+            CI/CD pipelines to support continuous and agile software releases.
           </ItemText>
           <ItemText>
             In just under five months our team of four developers was able to
             design and deliver a fully working real-time progressive web
-            application that is used by thousands of users on a daily basis. The
-            live web application can be found from:{' '}
-            <StyledAnchor
-              href="https://kauppa.sijoitusasunnot.com"
-              target="_blank"
-            >
-              https://kauppa.sijoitusasunnot.com
-            </StyledAnchor>
+            application that is used by thousands of users on a daily basis.
           </ItemText>
           <ItemText>
             Relevant tech:{' '}
             <Bold>
-              Next.js, React, Redux, GraphQL, Pusher, Typescript, Node.js, Express, Cypress, Jest,
-              Docker, CircleCi, Heroku
+              React, Next.js, Node.js, Express.js, Typescript, CircleCI, Cypress, GCP, Heroku, Sketch
             </Bold>
           </ItemText>
         </Item>
         <Item>
           <ItemTitle>University of Jyväskylä - Research assistant</ItemTitle>
-          <ItemDescription>Jan 2018 - Jan 2019</ItemDescription>
+          <ItemDescription>2018 - 2019</ItemDescription>
           <ItemText>
             After two years of my studies I started working in academic research
             group. I worked as a lead developer for multiple projects related to
@@ -203,7 +186,7 @@ export default () => (
         </Item>
         <Item>
           <ItemTitle>Web developer - Freelancer</ItemTitle>
-          <ItemDescription>Oct 2014 - Aug 2018</ItemDescription>
+          <ItemDescription>2014 - 2018</ItemDescription>
           <ItemText>
             Worked as a freelance web developer creating websites for my
             customers. During this time I designed, developed and deployed
