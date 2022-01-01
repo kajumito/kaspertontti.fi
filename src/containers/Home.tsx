@@ -5,7 +5,6 @@ import { Link } from 'gatsby'
 import WebGL from './home/WebGL'
 
 import { Title, Subtitle, Description } from '../components/Typography'
-import Tools from './home/Tools'
 
 import { media } from '../styles/styleUtils'
 
@@ -37,55 +36,6 @@ const Content = styled.div`
   `};
 `
 
-const JobTitle = styled.p`
-  color: white;
-  margin: 0 0 5px 0;
-`
-
-const Underline = styled.span`
-  cursor: default;
-  background: rgba(255, 255, 255, 0.2);
-  position: relative;
-  :hover span {
-    visibility: visible;
-    opacity: 1;
-  }
-`
-
-const Tooltip = styled.span`
-  position: absolute;
-  z-index: 1;
-  top: ${(p: { top?: number; width?: number }) =>
-    p.top ? `${p.top}px` : '32px'};
-  font-size: 12px;
-  background: #333;
-  padding: 10px;
-  width: ${p => (p.width ? `${p.width}px` : '200px')};
-  left: 50%;
-  margin-left: ${p => (p.width ? `${-p.width / 2}px` : '-100px')};
-  text-align: center;
-  line-height: 16px;
-  font-size: 12px;
-  color: white;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s;
-  ::after {
-    content: ' ';
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #333 transparent;
-  }
-  ${media.sm`
-    width: auto;
-  `}
-`
-
-const Contact = styled.span``
-
 const WebGLWrapper = styled.div`
   width: 40vw;
   height: 40vw;
@@ -94,6 +44,19 @@ const WebGLWrapper = styled.div`
     width: 35vw;
     height: 35vw;
   `}
+`
+
+const Underline = styled.a`
+  cursor: default;
+  background: rgba(255, 255, 255, 0.2);
+  position: relative;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  :hover span {
+    visibility: visible;
+    opacity: 1;
+  }
 `
 
 const StyledLink = styled(Link)`
@@ -120,40 +83,23 @@ export default () => {
       <Content>
         <Title>Kasper Tontti</Title>
         <Subtitle>Software Engineer & Designer</Subtitle>
-        <JobTitle>
-          Co-Founder at{' '}
-          <Underline>
-            <Tooltip top={28}>
-              Helping companies to evolve their business processes and models
-              with information technology.
-            </Tooltip>
-            Gnonce
-          </Underline>
-        </JobTitle>
         <Description>
-          Pretty good at coding stuff for{' '}
-          <Underline key="intro-underline">
-            {' '}
-            <Tooltip width={250}>
-              Everything I design and develop aims to provide smooth experience
-              for the user.
-            </Tooltip>
-            human beings.
+          Experienced software engineer and entrepreneur with a deep
+          understanding in modern web technologies and user centric software
+          design.
+        </Description>
+        <Description>
+          <Underline href="https://metaspace.fi" target="_blank">
+            @metaspace
           </Underline>{' '}
-          Fullstack software engineer with comprehensive knowledge of modern web
-          technologies.{' '}
-          <Underline>
-            <Tooltip width={300}>
-              I believe in human to human interaction. Don't be afraid to
-              contact me, and we can get to know each other.
-              <br />
-              <Contact>📨kasper@gnonce.com</Contact>
-            </Tooltip>
-            Get to know me better!
+          <Underline href="https://gnonce.com" target="_blank">
+            @gnonce
           </Underline>
         </Description>
-        <Tools />
-        <StyledLink to="/cv">See my resume &rarr;</StyledLink>
+        <Description>
+          <b>always building.</b>
+        </Description>
+        {/* <StyledLink to="/cv">See my resume &rarr;</StyledLink> */}
       </Content>
       {windowSize > 1023 && (
         <WebGLWrapper>
