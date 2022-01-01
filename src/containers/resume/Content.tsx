@@ -123,6 +123,14 @@ export default () => (
       <Subtitle>Experience</Subtitle>
       <Content>
         <Item>
+          <ItemTitle>Metaspace - Software Craftsman & Founder</ItemTitle>
+          <ItemDescription>2021 - Present</ItemDescription>
+          <ItemText>
+            Building metaverse. Platform for people to showcase and explore digital art & collectibles in web-based 3D environments. 
+            Metaspace is NFT compatible web3 platform where users can own and access & create different types of virtual spaces.
+          </ItemText>
+        </Item>
+        <Item>
           <ItemTitle>Gnonce - Software Craftsman & Co-Founder</ItemTitle>
           <ItemDescription>2018 - Present</ItemDescription>
           <ItemText>
