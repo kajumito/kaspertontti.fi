@@ -53,6 +53,7 @@ const Underline = styled.a`
   text-decoration: none;
   color: white;
   cursor: pointer;
+  margin-right: 4px;
   :hover span {
     visibility: visible;
     opacity: 1;
@@ -89,11 +90,14 @@ export default () => {
           design.
         </Description>
         <Description>
-          <Underline href="https://metaspace.fi" target="_blank">
-            @metaspace
-          </Underline>{' '}
           <Underline href="https://gnonce.com" target="_blank">
             @gnonce
+          </Underline>
+          <Underline href="https://metaspace.fi" target="_blank">
+            @metaspace
+          </Underline>
+          <Underline href="https://eventpal.app" target="_blank">
+            @eventpal
           </Underline>
         </Description>
         <Description>
