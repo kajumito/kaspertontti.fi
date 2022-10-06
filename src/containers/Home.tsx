@@ -85,7 +85,7 @@ export default () => {
         <Subtitle>Software Engineer & Designer</Subtitle>
         <Description>
           Experienced software engineer and entrepreneur with a deep
-          understanding in modern web technologies and user centric software
+          understanding of modern web technologies and user-centric software
           design.
         </Description>
         <Description>
