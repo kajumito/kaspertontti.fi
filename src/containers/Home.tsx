@@ -93,12 +93,6 @@ export default () => {
           <Underline href="https://gnonce.com" target="_blank">
             @gnonce
           </Underline>
-          <Underline href="https://metaspace.fi" target="_blank">
-            @metaspace
-          </Underline>
-          <Underline href="https://eventpal.app" target="_blank">
-            @eventpal
-          </Underline>
         </Description>
         <Description>
           <b>always building.</b>
