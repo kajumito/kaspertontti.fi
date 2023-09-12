@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Kasper Tontti" title="my personal website" src="https://github.com/kajumito/my-flex-zone/blob/master/src/images/signature-black.png" width="200"> </br>
+    <img alt="Kasper Tontti" title="my personal website" src="https://github.com/kajumito/kaspertontti.fi/blob/master/public/thumbnail.png" width="200"> </br>
     My personal website
 </h1>
 
