@@ -14,9 +14,9 @@ const Home = () => (
       </h2>
       <Paragraph>
         A seasoned software consultant with a decade of hands-on experience in
-        crafting user-centric digital solutions. Expertise spans from advanced
-        frontend development with a deep understanding of React and TypeScript,
-        to cloud solutions on AWS.
+        crafting user-centric digital solutions. Expertise spans from fullstack
+        development with a deep understanding of React & Node.js with
+        TypeScript, Python & .NET to cloud solutions on AWS & Azure.
       </Paragraph>
 
       <Tagline>
@@ -29,10 +29,10 @@ const Home = () => (
           @gnonce
         </Project>
         <Project
-          title="project dev lead"
+          title="sr. software engineer"
           link="https://www.kansallisgalleria.fi/fi"
         >
-          @kansallisgalleria
+          @mvision
         </Project>
       </div>
       <Paragraph>
