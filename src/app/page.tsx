@@ -30,7 +30,7 @@ const Home = () => (
         </Project>
         <Project
           title="sr. software engineer"
-          link="https://www.kansallisgalleria.fi/fi"
+          link="https://mvision.ai/"
         >
           @mvision
         </Project>
